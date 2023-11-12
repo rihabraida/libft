@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rraida- <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 20:47:16 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/02 18:18:12 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/12 13:17:42 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ char	*ft_strrchr(const char *str, int ch)
 	i = 0;
 	while (str[i] != '\0')
 		i++;
-	if (ch == '\0')
+	if ((char)ch == '\0')
 		return ((char *)&str[i]);
 	i--;
-	while (str[i] != '\0')
+	while (i >= 0)
 	{
 		if (str[i] == (char)ch)
 		{
@@ -34,9 +34,9 @@ char	*ft_strrchr(const char *str, int ch)
 }
 // int main()
 // {
-//     char str[]="hehlo\0ohl\0jyu";
+//     char *str = "ksjljdj";
 //     char l = '\0';
-//     char * result = strrchr(str,l);
+//     char * result = ft_strrchr(str,l);
 //     printf("%s  \n %ld",result, result - str);
 
 //     return (0);

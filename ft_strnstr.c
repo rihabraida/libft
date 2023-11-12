@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rraida- <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 17:23:35 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/03 21:29:58 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/12 18:14:14 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+#include <string.h>
 char	*ft_strnstr(const char *str, const char *sub, size_t len)
 {
 	size_t	lg;
@@ -22,8 +22,8 @@ char	*ft_strnstr(const char *str, const char *sub, size_t len)
 	i = 0;
 	if (lg == 0)
 		return ((char *)str);
-	if (len < lg)
-		return (NULL);
+	// if (len < lg)
+	// 	return (NULL);
 	while (str[i] != '\0' && i < len)
 	{
 		j = 0;
@@ -33,11 +33,11 @@ char	*ft_strnstr(const char *str, const char *sub, size_t len)
 			return ((char *)str + i);
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
 // int main()
 // {
 //     char str[]="hello";
 //     char sub[]="ell";
-//     printf("%s",ft_strnstr(str,sub,3));
+//     printf("%s",ft_strnstr(((void *)0), "fake", 3));
 // }
