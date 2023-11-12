@@ -10,20 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include<ctype.h>
-int ft_toupper(int ch)
+int	ft_toupper(int ch)
 {
-	if( ch >= 97 && ch <= 122)
+	if (ch >= 97 && ch <= 122)
 		ch = ch - 32;
-	return ch;
+	return (ch);
 }
-int main()
-{
-	int c;
-	c = -1;
-    printf("%i -> %i", c, toupper(c));
-	printf("%i -> %i", c, ft_toupper(c));
-}
-
-
+// int main()
+// {
+// 	int c;
+// 	c = -1;
+//     printf("%i -> %i", c, toupper(c));
+// 	printf("%i -> %i", c, ft_toupper(c));
+// }

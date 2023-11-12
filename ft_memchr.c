@@ -3,43 +3,40 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rraida- <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 18:50:48 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/02 19:15:18 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/11 22:28:11 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include <string.h>
+#include "libft.h"
+
 void	*ft_memchr(const void *str, int sh, size_t size)
 {
-		size_t i;
-		unsigned char *fd;
+	size_t				i;
+	const unsigned char	*fd;
 
-		if (!str )
-			return NULL;
-		fd = (unsigned char *)str;
-		i = 0;
-		while(fd[i] !='\0' && i < size)
-			{
-				if( fd[i] ==(unsigned char) sh)
-					return (void *)(fd + i);
-				i++;
-			}
-		return NULL;
+	if (!str)
+		return (NULL);
+	fd = (unsigned char *)str;
+	i = 0;
+	while (i < size)
+	{
+		if (fd[i] == (unsigned char)sh)
+			return ((void *)(str + i));
+		i++;
+	}
+	return (NULL);
 }
-int main()
-{
-	const char str []= "he.llo";
-   const char ch = '.';
-   char *ret;
+// int main()
+// {
+// 	const char str []= "he.llo";
+//    const char ch = '.';
+//    char *ret;
+//    ret = memchr(str, ch, 5);
 
-   ret = memchr(str, ch, 5);
+//   printf("String after |%c| is - |%s|\n", ch, ret);
 
-  printf("String after |%c| is - |%s|\n", ch, ret);
-
-   return(0);
-}
-
-		
+//    return(0);
+// }

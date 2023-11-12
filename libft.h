@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rraida- <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 13:13:24 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/08 13:13:32 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/11 21:57:45 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,10 @@
 # include <unistd.h>
 
 int		ft_isalpha(int q);
-int		isdigit(int arg);
-int		isalnum(int arg);
+int		ft_isdigit(int arg);
+int		ft_isalnum(int arg);
 int		ft_isascii(int arg);
+int     ft_isprint(int arg);
 size_t	ft_strlen(const char *str);
 void	*ft_memset(void *dest, int ch, size_t count);
 void	ft_bzero(void *dest, size_t n);
@@ -36,7 +37,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 void	*ft_memchr(const void *str, int sh, size_t size);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *str, const char *sub, size_t len);
-int		atoi(const char *str);
+int		ft_atoi(const char *str);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(char *src);
 char	*ft_substr(char const *s, unsigned int start, size_t len);

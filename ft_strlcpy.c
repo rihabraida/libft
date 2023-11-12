@@ -9,8 +9,10 @@
 /*   Updated: 2023/11/02 11:31:40 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
-size_t	ft_strlcpy(char *dest, const char *src, size_t  size)
+
+#include "libft.h"
+
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	j;
@@ -32,9 +34,9 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t  size)
 	}
 	return (j);
 }
-int main()
-{
-	char str[]="hello";
-	char dest[5];
-	printf("%zu %s",ft_strlcpy(dest,str,5),dest);
-			}
+// int main()
+// {
+// 	char str[]="hello";
+// 	char dest[5];
+// 	printf("%zu %s",ft_strlcpy(dest,str,5),dest);
+// 			}

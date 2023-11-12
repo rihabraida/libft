@@ -3,18 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rraida- <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 21:32:09 by rraida-           #+#    #+#             */
-/*   Updated: 2023/10/31 21:40:31 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/11 22:29:53 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int isprint(int arg)
+int	ft_isprint(int arg)
 {
-	if( arg >= 32 && arg <= 127)
-		return 1;
-	else 
-		return 0;
+	if (arg >= 32 && arg < 127)
+		return (1);
+	else
+		return (0);
 }
-

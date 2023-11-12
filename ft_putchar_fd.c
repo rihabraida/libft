@@ -9,17 +9,19 @@
 /*   Updated: 2023/11/07 18:40:28 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
-#include <fcntl.h>
-#include<stdio.h>
-void    ft_putchar_fd(char c, int fd)
-{
-    write(fd,&c,1);
-}
-int main()
-{
-    printf("%d     ",open("test", O_WRONLY));
-    printf("%d",open("teskl", O_WRONLY));
-    ft_putchar_fd('C',open("test", O_WRONLY));
 
+#include "libft.h"
+#include <fcntl.h>
+#include <unistd.h>
+
+void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
 }
+// int main()
+// {
+//     printf("%d     ",open("test", O_WRONLY));
+//     printf("%d",open("teskl", O_WRONLY));
+//     ft_putchar_fd('C',open("test", O_WRONLY));
+
+// }

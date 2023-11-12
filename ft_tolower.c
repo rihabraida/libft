@@ -10,11 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int arg)
+int	ft_tolower(int arg)
 {
-	if( arg >= 65 && arg <= 90)
+	if (arg >= 65 && arg <= 90)
 		arg = arg + 32;
-	else
-		return arg;
-	return arg;
+	return (arg);
 }

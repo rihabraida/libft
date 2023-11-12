@@ -10,27 +10,25 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-void *ft_memset(void *dest, int ch, size_t count)
+#include "libft.h"
+
+void	*ft_memset(void *dest, int ch, size_t count)
 {
-	unsigned char *q;
-	size_t	i;
+	unsigned char	*q;
+	size_t			i;
+
 	i = 0;
 	q = (unsigned char *)dest;
-
-	while( i < count)
+	while (i < count)
 	{
 		q[i] = (unsigned char)ch;
 		i++;
-
 	}
-	return dest;
+	return (dest);
 }
-int main()
-{
-	int set[] ={1,3,8,6};
-	int *p = memset(set,2,5);
-  	 printf(" %d %d  %d" ,p[0], p[1],p[2]);
-}
-
+// int main()
+// {
+// 	int set[] ={1,3,8,6};
+// 	int *p = memset(set,2,5);
+//   		printf(" %d %d  %d" ,p[0], p[1],p[2]);
+// }

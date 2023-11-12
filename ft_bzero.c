@@ -1,34 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   bzero.c                                            :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rraida- <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 12:07:07 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/01 12:51:10 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/11 17:06:00 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include<string.h>
+#include "libft.h"
+
 void	ft_bzero(void *dest, size_t n)
 {
-	int i;
+	int				i;
+	unsigned char	*dt;
+
 	i = 0;
-	unsigned char *dt;
-	dt = dest;
-	while(n)
+	dt = (unsigned char *)dest;
+	while (n)
 	{
 		dt[i] = 0;
 		i++;
 		n--;
 	}
 }
-int main()
-{
-	int dest[80]={1,2,3,4};
-	ft_bzero(dest, 5);
-	printf("%i %i",dest[0] ,dest[1]);
-}
-
+// int main()
+// {
+// 	int *dest =NULL;
+// 	ft_bzero(dest, 5);
+// 	printf("%i %i",dest[0] ,dest[1]);
+// }

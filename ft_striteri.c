@@ -6,22 +6,22 @@
 /*   By: rraida- <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:10:11 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/07 17:10:14 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/10 14:23:27 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-void    ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-    if(s)
-    {
-        unsigned int i;
-        i = 0;
-        while(*s)
-        {
-            f(i,s);
-            s++;
-            i++;
-        }
-    }
+	unsigned int	i;
+
+	i = 0;
+	if (s)
+	{
+		while (*s)
+		{
+			f(i, s);
+			s++;
+			i++;
+		}
+	}
 }

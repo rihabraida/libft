@@ -10,16 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
+#include "libft.h"
 
 char	*ft_strdup(char *src)
 {
@@ -28,7 +19,6 @@ char	*ft_strdup(char *src)
 	char	*dest;
 
 	l = ft_strlen(src);
-
 	dest = malloc(sizeof(char) * (l + 1));
 	if (dest == NULL)
 		return (0);

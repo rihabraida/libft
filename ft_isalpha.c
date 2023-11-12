@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isalpha.c                                          :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rraida- <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 17:14:29 by rraida-           #+#    #+#             */
-/*   Updated: 2023/10/31 17:52:41 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/10 15:20:06 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-int ft_isalpha(int q)
+int	ft_isalpha(int c)
 {
-	if( (q <= 'Z' && q >= 'A') || ( q <= 'z' && q >= 'a'))
-		return 1;
+	if ((c <= 'Z' && c >= 'A') || (c <= 'z' && c >= 'a'))
+		return (1);
 	else
-		return 0;	
-		
+		return (0);
 }
-int main()
-{
-	printf("%d", ft_isalpha(100));
-	return 0;
-}
+// int main()
+// {
+// 	printf("%d", ft_isalpha(100));
+// 	return (0);
+// }

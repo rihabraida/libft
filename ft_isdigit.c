@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rraida- <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 20:36:51 by rraida-           #+#    #+#             */
-/*   Updated: 2023/10/31 20:41:40 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/10 18:14:51 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int isdigit(int arg)
+int	ft_isdigit(int c)
 {
-	if(arg <= 9 && arg >= 0)
-		return 1;
+	if (c >= '0' && c <= '9')
+		return (1);
 	else
-		return 0;
+		return (0);
 }
