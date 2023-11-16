@@ -6,13 +6,16 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 12:53:58 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/10 20:00:22 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/14 16:11:02 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+#include <fcntl.h>
+#include <unistd.h>
 void	ft_putnbr_fd(int nb, int fd)
+{
+if(fd != -1)
 {
 	if (nb == -2147483648)
 	{
@@ -33,3 +36,9 @@ void	ft_putnbr_fd(int nb, int fd)
 	else
 		ft_putchar_fd(nb + '0', fd);
 }
+}
+// int main()
+// {
+// 	ft_putnbr_fd(4125, open("file1.txt",O_WRONLY));	
+// 	printf("%d", open("file1.txt",O_WRONLY));
+// }

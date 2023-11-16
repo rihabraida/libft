@@ -6,7 +6,7 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 12:07:07 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/11 17:06:00 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/15 19:06:45 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,15 @@
 
 void	ft_bzero(void *dest, size_t n)
 {
-	int				i;
+	size_t				i;
 	unsigned char	*dt;
 
 	i = 0;
 	dt = (unsigned char *)dest;
-	while (n)
+	while (i < n)
 	{
 		dt[i] = 0;
 		i++;
-		n--;
 	}
 }
 // int main()

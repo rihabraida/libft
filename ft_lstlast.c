@@ -1,32 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/08 12:30:03 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/14 16:15:43 by rraida-          ###   ########.fr       */
+/*   Created: 2023/11/13 16:46:41 by rraida-           #+#    #+#             */
+/*   Updated: 2023/11/16 11:52:53 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+t_list *ft_lstlast(t_list *lst)
 {
-	int	i;
-
-	i = 0;
-if(s != NULL && fd != -1)
-{	while (s[i] != '\0')
-	{
-		write(fd, &s[i], 1);
-		i++;
-	}
-}	
+    t_list *p;
+    t_list *q;
+    
+    p = lst;
+    if(lst == NULL)
+        return (NULL);
+    while(p != NULL)
+    {
+        q = p;
+        p = p->next;
+    }
+    return (q);
 }
-// int main()
-// {
-//     char str[]="hekid";
-//     ft_putstr_fd(str,open("test", O_WRONLY));
-// }

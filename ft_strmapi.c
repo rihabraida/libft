@@ -6,7 +6,7 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:38:43 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/10 18:40:56 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/15 17:48:51 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 // 	char* str2;
 // 	str2 = ft_strmapi(str1, *f);
 // 	printf("%s\n", str2);
-// }

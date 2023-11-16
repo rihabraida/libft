@@ -1,32 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/08 12:30:03 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/14 16:15:43 by rraida-          ###   ########.fr       */
+/*   Created: 2023/11/14 15:58:16 by rraida-           #+#    #+#             */
+/*   Updated: 2023/11/16 12:23:30 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+void    ft_lstiter(t_list *lst,void (*f) (void *))
 {
-	int	i;
-
-	i = 0;
-if(s != NULL && fd != -1)
-{	while (s[i] != '\0')
-	{
-		write(fd, &s[i], 1);
-		i++;
-	}
-}	
+    t_list *p;
+    p = lst;
+    // if(lst == NULL)
+    //     return (0);
+    while(p != NULL)
+    {
+        f(p->content);
+        p = p->next; 
+    }
 }
-// int main()
-// {
-//     char str[]="hekid";
-//     ft_putstr_fd(str,open("test", O_WRONLY));
-// }

@@ -1,32 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/08 12:30:03 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/14 16:15:43 by rraida-          ###   ########.fr       */
+/*   Created: 2023/11/13 18:38:39 by rraida-           #+#    #+#             */
+/*   Updated: 2023/11/14 13:06:45 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+void    ft_lstdelone(t_list *lst , void (*del)(void *))
 {
-	int	i;
-
-	i = 0;
-if(s != NULL && fd != -1)
-{	while (s[i] != '\0')
-	{
-		write(fd, &s[i], 1);
-		i++;
-	}
-}	
+    del(lst->content);
+    free(lst);
+    lst = NULL;
 }
-// int main()
+// void del(void *c)
 // {
-//     char str[]="hekid";
-//     ft_putstr_fd(str,open("test", O_WRONLY));
+//     free(c);
+//     c = NULL;
 // }
+
+
