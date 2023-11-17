@@ -16,7 +16,7 @@ $(NAME): $(OFILES)
 bonus : $(BNO)
 
 $(BNO) : $(BNC)
-	$(CC) $(CFLAGES) -c $(BNC)
+	$(CC) $(CFLAGS) -c $(BNC)
 	ar rcs $(NAME) $(BNO) 
 
 clean:

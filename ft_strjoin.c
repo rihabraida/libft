@@ -12,6 +12,7 @@
 
 #include "libft.h"
 #include <string.h>
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*res;
@@ -26,16 +27,16 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	lg2 = 0;
 	if (!s1 && !s2)
 		return (NULL);
-	if(s1 != NULL)
+	if (s1 != NULL)
 		lg1 = ft_strlen(s1);
-	if(s2 != NULL)
+	if (s2 != NULL)
 		lg2 = ft_strlen(s2);
 	res = (char *)malloc(lg1 + lg2 + 1);
 	if (!res)
-		return (NULL);	
-	if(s1 != NULL)
+		return (NULL);
+	if (s1 != NULL)
 		ft_strlcpy(res, s1, lg1 + 1);
-	if(s2 != NULL)
+	if (s2 != NULL)
 		ft_strlcpy(res + lg1, s2, lg2 + 1);
 	return (res);
 }

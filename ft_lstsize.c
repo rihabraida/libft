@@ -11,21 +11,22 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_lstsize(t_list *lst)
-{
-    t_list *p;
-    int i;
 
-    p = lst;
-    i = 0;
-    if(lst == NULL)
-        return (0);
-    while(p != NULL)
-    {
-        p = p->next;
-        i++;
-    }
-    return i;
+int	ft_lstsize(t_list *lst)
+{
+	t_list	*p;
+	int		i;
+
+	p = lst;
+	i = 0;
+	if (lst == NULL)
+		return (0);
+	while (p != NULL)
+	{
+		p = p->next;
+		i++;
+	}
+	return (i);
 }
 // int main()
 // {
@@ -52,5 +53,5 @@ int ft_lstsize(t_list *lst)
 // /* Save address of first node in head */
 // head = one;
 // printf("%d",ft_lstsize(head));
-    
+
 // }

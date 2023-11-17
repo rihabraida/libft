@@ -15,12 +15,12 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*tab;
-	int 	i;
+	int		i;
 
 	i = 0;
 	i = count * size;
-	if(count != 0  && (i / count) != size)
-		return(NULL);
+	if (count != 0 && (i / count) != size)
+		return (NULL);
 	tab = malloc(i);
 	if (!tab)
 		return (NULL);

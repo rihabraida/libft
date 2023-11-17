@@ -17,8 +17,8 @@ void	ft_putendl_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
-	if(s != NULL && fd != -1)
-	{	
+	if (s != NULL && fd != -1)
+	{
 		while (s[i] != '\0')
 		{
 			write(fd, &s[i], 1);
@@ -26,5 +26,4 @@ void	ft_putendl_fd(char *s, int fd)
 		}
 	}
 	write(fd, "\n", 1);
-	
 }

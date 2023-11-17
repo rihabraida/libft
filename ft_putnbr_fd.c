@@ -13,32 +13,33 @@
 #include "libft.h"
 #include <fcntl.h>
 #include <unistd.h>
+
 void	ft_putnbr_fd(int nb, int fd)
 {
-if(fd != -1)
-{
-	if (nb == -2147483648)
+	if (fd != -1)
 	{
-		write(fd, "-2147483648", 11);
-		return ;
+		if (nb == -2147483648)
+		{
+			write(fd, "-2147483648", 11);
+			return ;
+		}
+		else if (nb < 0)
+		{
+			ft_putchar_fd('-', fd);
+			nb = -nb;
+			ft_putnbr_fd(nb, fd);
+		}
+		else if (nb > 9)
+		{
+			ft_putnbr_fd(nb / 10, fd);
+			ft_putnbr_fd(nb % 10, fd);
+		}
+		else
+			ft_putchar_fd(nb + '0', fd);
 	}
-	else if (nb < 0)
-	{
-		ft_putchar_fd('-', fd);
-		nb = -nb;
-		ft_putnbr_fd(nb, fd);
-	}
-	else if (nb > 9)
-	{
-		ft_putnbr_fd(nb / 10, fd);
-		ft_putnbr_fd(nb % 10, fd);
-	}
-	else
-		ft_putchar_fd(nb + '0', fd);
-}
 }
 // int main()
 // {
-// 	ft_putnbr_fd(4125, open("file1.txt",O_WRONLY));	
+// 	ft_putnbr_fd(4125, open("file1.txt",O_WRONLY));
 // 	printf("%d", open("file1.txt",O_WRONLY));
 // }

@@ -6,15 +6,15 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 16:13:12 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/11 21:58:48 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/17 19:43:40 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_atoi(const char *str)
 {
-	int		i;
-	long	res;
-	int		sign;
+	int	i;
+	int	res;
+	int	sign;
 
 	i = 0;
 	res = 0;

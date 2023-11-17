@@ -6,7 +6,7 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 17:30:13 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/12 18:50:07 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/16 21:52:51 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 
 	i = 0;
+	if (s == NULL)
+		return (NULL);
 	if (start >= ft_strlen(s))
 		return (ft_strdup(""));
 	if (len > ft_strlen(s + start))

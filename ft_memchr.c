@@ -6,7 +6,7 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 18:50:48 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/12 13:31:57 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/16 22:53:09 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ void	*ft_memchr(const void *str, int sh, size_t size)
 	size_t				i;
 	const unsigned char	*fd;
 
-	// if (!str)
-	// 	return (NULL);
 	fd = (unsigned char *)str;
 	i = 0;
 	while (i < size)
@@ -31,7 +29,7 @@ void	*ft_memchr(const void *str, int sh, size_t size)
 }
 // int main()
 // {
-// 	const char str []= "he.llo";
+// 	const char *str = NULL;
 //    const char ch = '.';
 //    char *ret;
 //    ret = memchr(str, ch, 5);

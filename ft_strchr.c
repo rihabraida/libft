@@ -6,11 +6,12 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 20:08:44 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/12 13:17:34 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/17 19:42:52 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
+#include <string.h>
 
 char	*ft_strchr(const char *str, int ch)
 {
@@ -24,12 +25,12 @@ char	*ft_strchr(const char *str, int ch)
 		return ((char *)str);
 	return (NULL);
 }
-// int main()
+// int	main(void)
 // {
-//     char *str = NULL;
-//     char l = 'h';
-//     char * result = ft_strchr(str,l);
-//     printf("%s  \n ",result);
+// 	char *str = "fkrmmf";
+// 	char l = 'a';
+// 	char *result = ft_strchr(str, l);
+// 	printf("%s  \n ", result);
 
-//     return (0);
+// 	return (0);
 // }

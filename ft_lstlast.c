@@ -12,18 +12,18 @@
 
 #include "libft.h"
 
-t_list *ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
-    t_list *p;
-    t_list *q;
-    
-    p = lst;
-    if(lst == NULL)
-        return (NULL);
-    while(p != NULL)
-    {
-        q = p;
-        p = p->next;
-    }
-    return (q);
+	t_list	*p;
+	t_list	*q;
+
+	p = lst;
+	if (lst == NULL)
+		return (NULL);
+	while (p != NULL)
+	{
+		q = p;
+		p = p->next;
+	}
+	return (q);
 }
