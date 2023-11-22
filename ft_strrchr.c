@@ -6,7 +6,7 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 20:47:16 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/12 13:17:42 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/18 16:40:49 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,3 @@ char	*ft_strrchr(const char *str, int ch)
 	}
 	return (0);
 }
-// int main()
-// {
-//     char *str = "ksjljdj";
-//     char l = '\0';
-//     char * result = ft_strrchr(str,l);
-//     printf("%s  \n %ld",result, result - str);
-
-//     return (0);
-// }

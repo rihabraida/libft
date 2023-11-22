@@ -6,7 +6,7 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:38:43 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/15 17:48:51 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/18 18:31:36 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	int		i;
 
 	i = 0;
-	if (!s)
+	if (!s || !f)
 		return (NULL);
 	tab = malloc(sizeof(char) * ft_strlen(s) + 1);
 	if (!tab)
@@ -31,16 +31,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	tab[i] = '\0';
 	return (tab);
 }
-// char f(unsigned int i, char c)
-// {
-// 	char str;
-// 	str = c + i;
-// 	return (str);
-// }
-
-// int main()
-// {
-// 	char str1[] = "abc";
-// 	char* str2;
-// 	str2 = ft_strmapi(str1, *f);
-// 	printf("%s\n", str2);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rraida- <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 18:11:57 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/02 17:19:44 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/18 16:33:40 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,3 @@ int	ft_toupper(int ch)
 		ch = ch - 32;
 	return (ch);
 }
-// int main()
-// {
-// 	int c;
-// 	c = -1;
-//     printf("%i -> %i", c, toupper(c));
-// 	printf("%i -> %i", c, ft_toupper(c));
-// }

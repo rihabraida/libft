@@ -6,7 +6,7 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 18:38:44 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/15 20:46:04 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/18 16:29:07 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	}
 	return (j);
 }
-// int main()
-// {
-// 	char str[]="hello";
-// 	char dest[5];
-// 	printf("%zu %s",ft_strlcpy(dest,str,5),dest);
-// 			}

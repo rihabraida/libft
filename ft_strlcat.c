@@ -6,12 +6,11 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 18:42:11 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/11 21:37:00 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/20 14:08:31 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
@@ -37,14 +36,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	dest[j] = '\0';
 	return (x + y);
 }
-// int main() {
-//     char *destination = NULL;
-//     const char* source = "jhkjbhh";
-
-//     size_t result = ft_strlcat(destination, source, 0);
-
-//     printf("Concatenated: %s\n", destination);
-//     printf("Total length: %zu\n", result);
-
-//     return (0);
-// }

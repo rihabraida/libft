@@ -6,7 +6,7 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 12:30:03 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/14 16:15:43 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/18 16:23:13 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,3 @@ void	ft_putstr_fd(char *s, int fd)
 		}
 	}
 }
-// int main()
-// {
-//     char str[]="hekid";
-//     ft_putstr_fd(str,open("test", O_WRONLY));
-// }

@@ -6,7 +6,7 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 20:43:02 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/11 22:26:36 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/20 14:29:23 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,3 @@ int	ft_isalnum(int arg)
 	else
 		return (0);
 }
-// int main()
-// {
-// 	char h;
-// 	h = 'c';
-// 	printf("%d",isalnum(h));
-
-// }

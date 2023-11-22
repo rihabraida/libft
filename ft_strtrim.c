@@ -6,7 +6,7 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 22:00:36 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/17 21:16:10 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/18 16:40:10 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*str;
 	int		i;
 
-	if (!s1)
+	if (!s1 || !set)
 		return (NULL);
-	
 	end = ft_strlen(s1) - 1;
 	start = 0;
 	while (start <= end && ft_check(set, s1[start]))
@@ -49,9 +48,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(str, s1 + start, end - start + 2);
 	return (str);
 }
-// int main()
-// {
-//      char s1[] = "ABDCCCADBC";
-//     char s2[] = "ABC";
-//     printf("%s\n", ft_strtrim(s1, s2));
-// }

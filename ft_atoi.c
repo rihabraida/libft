@@ -6,15 +6,17 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 16:13:12 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/17 19:43:40 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/20 14:28:27 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	res;
-	int	sign;
+	long	res;
+	int		i;
+	int		sign;
 
 	i = 0;
 	res = 0;

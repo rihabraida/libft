@@ -6,7 +6,7 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 17:30:13 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/16 21:52:51 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/18 16:39:33 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub[i] = '\0';
 	return (sub);
 }
-// int main()
-// {
-// 	char s[]= "bonjour";
-// 	printf("%s", ft_substr(s,2,7));
-// }

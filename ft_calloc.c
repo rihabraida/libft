@@ -6,7 +6,7 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 22:01:20 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/16 13:23:31 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/20 12:03:11 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void	*tab;
-	int		i;
+	void		*tab;
+	size_t		i;
 
-	i = 0;
 	i = count * size;
 	if (count != 0 && (i / count) != size)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 12:07:07 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/15 19:06:45 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/18 13:49:52 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,3 @@ void	ft_bzero(void *dest, size_t n)
 		i++;
 	}
 }
-// int main()
-// {
-// 	int *dest =NULL;
-// 	ft_bzero(dest, 5);
-// 	printf("%i %i",dest[0] ,dest[1]);
-// }

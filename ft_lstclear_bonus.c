@@ -1,44 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/13 15:52:57 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/17 19:44:25 by rraida-          ###   ########.fr       */
+/*   Created: 2023/11/13 21:31:39 by rraida-           #+#    #+#             */
+/*   Updated: 2023/11/18 16:45:19 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	if (*lst == NULL)
-	{
-		*lst = new;
+	t_list	*q;
+	t_list	*p;
+
+	if (!lst || !del)
 		return ;
+	p = *lst;
+	while (p)
+	{
+		q = p;
+		p = p->next;
+		ft_lstdelone(q, del);
 	}
-	new->next = *lst;
-	*lst = new;
+	*lst = NULL;
 }
-// int main(int arc, char **arv)
-// {
-// t_list *head = NULL;
-// t_list *new;
-// int i;
-
-// i = 1;
-// while(i < arc)
-// {
-// 	new = ft_lstnew(arv[i]);
-// 	ft_lstadd_front(&head, new);
-// 	i++;
-// }
-// while(head)
-// {
-// 	printf("%s",(char *)head->content);
-// 	head = head->next;
-
-// }
-// }

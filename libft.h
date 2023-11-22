@@ -6,14 +6,13 @@
 /*   By: rraida- <rraida-@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 13:13:24 by rraida-           #+#    #+#             */
-/*   Updated: 2023/11/16 11:21:43 by rraida-          ###   ########.fr       */
+/*   Updated: 2023/11/19 09:34:10 by rraida-          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
 
